@@ -1,12 +1,12 @@
 ![](https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png)
 
 <div align="center" >
-    <img src="https://img.shields.io/badge/Create-white" />
-    <img src="https://img.shields.io/badge/Simple-blue" />
-    <img src="https://img.shields.io/badge/API-red" />
-    <img src="https://img.shields.io/badge/with-white" />
+    <img src="https://img.shields.io/badge/Create-white" height="28" />
+    <img src="https://img.shields.io/badge/Simple-blue" height="28" />
+    <img src="https://img.shields.io/badge/API-red" height="28"/>
+    <img src="https://img.shields.io/badge/with-white" height="28"/>
     <img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi"/>
-    <img src="https://img.shields.io/badge/and-black" />
+    <img src="https://img.shields.io/badge/and-black" height="28" />
     <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white" />
 </div>
 
