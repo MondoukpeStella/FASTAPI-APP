@@ -1,23 +1,19 @@
-# API CRUD with FastAPI and SQLite3
+![](https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png)
 
 <div align="center" >
-    <img src="https://img.shields.io/badge/Create-white" height="30"/>
-    <img src="https://img.shields.io/badge/Simple-blue" height="30"/>
-    <img src="https://img.shields.io/badge/API-red" height="30"/>
-    <img src="https://img.shields.io/badge/with-white" height="30"/>
-    <img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi"height="30"/>
-    <img src="https://img.shields.io/badge/and-black" height="30"/>
-    <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white" height="30"/>
+    <img src="https://img.shields.io/badge/Create-white" />
+    <img src="https://img.shields.io/badge/Simple-blue" />
+    <img src="https://img.shields.io/badge/API-red" />
+    <img src="https://img.shields.io/badge/with-white" />
+    <img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi"/>
+    <img src="https://img.shields.io/badge/and-black" />
+    <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white" />
 </div>
 
-## Table of Contents
-- [Overview](#Overview)
-- [Features](#features)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Running the Application](#running-the-application)
+###  
 
-## Overview
+# API CRUD with FastAPI and SQLite3
+
 This is a simple CRUD (Create, Read, Update, Delete) API built using FastAPI and SQLite3 for the database. FastAPI is a modern, high-performance web framework for building APIs with Python, and SQLite3 is a lightweight relational database.
 
 ## Features
