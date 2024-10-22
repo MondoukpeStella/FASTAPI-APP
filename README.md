@@ -5,9 +5,9 @@
     <img src="https://img.shields.io/badge/Simple-blue" height="30"/>
     <img src="https://img.shields.io/badge/API-red" height="30"/>
     <img src="https://img.shields.io/badge/with-white" height="30"/>
-    <img src="https://img.shields.io/badge/FASTAPI-green"height="30"/>
+    <img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi"height="30"/>
     <img src="https://img.shields.io/badge/and-black" height="30"/>
-    <img src="https://img.shields.io/badge/SQLITE3-yellow" height="30"/>
+    <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white" height="30"/>
 </div>
 
 ## Table of Contents
