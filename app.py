@@ -79,10 +79,10 @@ def create_book_endpoint(book: BookItem):
 def getAll_books_endpoint():
     result = []    
     books = get_book()
-                
+    
+    print(books)         
     for book in books :
-        for i in range(0,len(book),4) :
-            result.append({"id":book[i],"title":book[i+1],"author":book[i+2]})    
+        result.append({"id":book[0],"title":book[0+1],"author":book[0+2]})    
     return result
 
 @app.get("/books/{id}")
