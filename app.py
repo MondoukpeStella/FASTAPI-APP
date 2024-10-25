@@ -1,5 +1,3 @@
-from turtle import done
-from typing import Union
 from fastapi import FastAPI, status, HTTPException
 from pydantic import BaseModel
 import sqlite3
@@ -29,9 +27,12 @@ def create_table():
     connection.close()
     
 def get_book(id:int=None):
+    if id == 0:
+        return None
     connection = create_connection()
     cursor = connection.cursor()
-    if id :
+
+    if id:
         resp = cursor.execute(f"""
         SELECT * FROM books WHERE id={id}
         """)
@@ -44,10 +45,11 @@ def get_book(id:int=None):
 def create_book(book: BookItem):
     connection = create_connection()
     cursor = connection.cursor()
-    cursor.execute("INSERT INTO books (title, author) VALUES (?, ?)", (book.title, book.author))
+    resp = cursor.execute("INSERT INTO books (title, author) VALUES (?, ?)", (book.title, book.author))
     connection.commit()
     connection.close()
-    
+    return resp.lastrowid
+
 def update_book(field:str, id:int,value: str):
     connection = create_connection()
     cursor = connection.cursor()
@@ -77,19 +79,21 @@ def create_book_endpoint(book: BookItem):
 
 @app.get("/books")
 def getAll_books_endpoint():
-    result = []    
+    result = []
     books = get_book()
     
-    print(books)         
-    for book in books :
-        result.append({"id":book[0],"title":book[0+1],"author":book[0+2]})    
+    if books:
+        result = [
+            {"id": id, "title": title, "author": author}
+            for id, title, author in books
+        ]
     return result
 
 @app.get("/books/{id}")
 def get_book_by_id(id:int):
     book = get_book(id)
     
-    if book :
+    if book:
         return {"id":book[0][0],"title":book[0][1],"author":book[0][2]} 
     else :
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
